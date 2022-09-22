@@ -2,7 +2,7 @@ import Foundation
 /*: ## DO NOW
  
 Create a function that takes two integers and checks if they are equal. If they are equal, print "These numbers are the same". If the first integer is larger, print "This number is larger". Else, print the second number is larger.*/
-
+func
  
 
  
@@ -10,13 +10,32 @@ Create a function that takes two integers and checks if they are equal. If they 
  
 1) Write a function named isNegative. It accepts two integer values and return true if one is negative and one is positive. Return true only if both are negative.
 */
- 
+func isNegative(num3: Int, num2: Int){
+    if num1 == num2 {
+        print("These numbers are the same")
+    }
+    else if num1 > num2{
+        print("The first number is larger")
+    }
+    else {
+        print("The second number is larger")
+    }
+}
+
 
 
 /*:
  2) Write a function that adds "Is" to the front of a given string. However, if the string already begins with "Is", return the given string.
  */
- 
+func isNegative(num3: Int, num4: Int) -> Boo1 {
+    if (num3 < 0 && num4 >= 0) || (num4 < 0 && num3 >= 0){
+        return false
+    }
+    else if num3 <0 && num4 < 0 {
+        return true
+    }
+    return false
+}
 
 
 
@@ -30,6 +49,7 @@ if windy {
 } else {
   print("Motor on")
 }
+windy ? print("Sails up") : print("Motor on")
 
 
 
@@ -52,7 +72,18 @@ if secretIdentity == "Tony Stark" {
   superheroName = "Unknown"
 }
 
-
+switch secretIdentity {
+case "Tony Spark":
+    superheroName = "Ironman"
+case "Natasha Romanoff":
+    superheroName = "BlackWidow"
+case "Prince T'Challa":
+    superheroName = "Black Panther"
+case "Thor";
+    superheroName = "Thor"
+default:
+    superheroName = "Unknown"
+}
 
 
 /*:
@@ -62,13 +93,20 @@ addition(3, 2) ➞ 5
 addition(-3, -6) ➞ -9
 addition(7, 3) ➞ 10
 */
-
+func addition(_ num1: Int, _ num2: Int) -> Int {
+    return num1 + num2
+}
 
 
 
 
 /*: 6) Write a function named min2 that takes two Int values, a and b, and returns the smallest one. Use _ to ignore the external parameter names for both a and b. */
-
+func min2(_ a: Int, _ b: Int) -> Int {
+    if a < b {
+        return a
+    }
+    return b
+}
 
 
 
@@ -79,7 +117,9 @@ addition(7, 3) ➞ 10
 7) Write a function that takes an Int and returns it’s last digit. Name the function lastDigit. Use _ to ignore the external parameter name.
 
 */
-
+func lastDigit(_ int: Int -> Int) -> Int {
+    return int % 10
+}
 
 
 
@@ -95,5 +135,9 @@ Write a function that takes two integers (hours, minutes), converts them to seco
  
  */
 
-
+func seconds(hours: Int, minutes: Int) {
+    var seconds = 0
+    seconds += (hours * 3600) + (minutes * 60)
+    print(seconds)
+}
 
